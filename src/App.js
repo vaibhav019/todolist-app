@@ -4,7 +4,7 @@ import React from 'react'
 import './App.css';
 import Header from './components/Header';
 import Input from '@material-ui/core/Input';
-import { Button, Container, IconButton, Typography } from '@material-ui/core';
+import { Button, Container, IconButton } from '@material-ui/core';
 import DeleteForeverIcon from '@material-ui/icons/DeleteForever';
 import { Jumbotron, ListGroup, ListGroupItem } from 'reactstrap';
 //import Carasoul from './components/Carasoul';
