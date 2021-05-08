@@ -6,6 +6,7 @@ import Typography from '@material-ui/core/Typography';
 //import Button from '@material-ui/core/Button';
 import IconButton from '@material-ui/core/IconButton';
 import logo from '../logo.svg'
+import Clock from './Clock';
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -27,8 +28,13 @@ export default function Header() {
           <Typography variant="h6" color='secondary' className={classes.title}>
             ToDoList
           </Typography>
+          <div style={{marginLeft:"30px"}}> 
+          <Clock/>
+          </div>
+          
          
         </Toolbar>
+       
       </AppBar>
     </div>
   );

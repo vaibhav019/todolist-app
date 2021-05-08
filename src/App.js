@@ -77,12 +77,12 @@ updateinput(input){
     >
   add todo
   </Button><br/><br/>
-  <ListGroup >
+  <ListGroup  style={{listStyleType:'none' ,margin:5 ,padding:10}}>
   {this.state.list.map(item =>{
     return(
       <Container color="primary"> 
       <Jumbotron>
-      <ListGroupItem key={item.id} style={{listStyleType:'none',backgroundColor:'secondary' ,margin:10 ,padding:10}} >
+      <ListGroupItem key={item.id} style={{listStyleType:'none' ,margin:5 ,padding:10}} >
       {/*< input
        type="checkbox"
         name="isDone" 
@@ -92,7 +92,7 @@ updateinput(input){
       
         {item.value}
 
-        <IconButton style={{ marginLeft:10}}>
+        <IconButton color='primary'style={{ marginLeft:10}}>
         <DeleteForeverIcon 
         onClick={()=>this.deleteitem(item.id)}
 
